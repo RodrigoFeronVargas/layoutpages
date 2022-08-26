@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --body-color:  #0c0c0c;    
+    --login-title: #191919;
+    --login-background-color: #4c4c4c;
+    --tiltle-color: #fff;
+    --input-border-color: #b2b2b2;
+    --input-background-color: #b2b2b2;
+    --input-placeholder-color: #0c0c0c;
+    --i-color: #0c0c0c;
+    --i-background-color: #7f7f7f;
+    --button-background-color: #0c0c0c;
+    --button-background-placeholder-color: #191919;
+    --link-color: #0c0c0c;
+    --link-hover-color: #191919;
+}
+
+body{
+    background-color: var(--body-color);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container-login{
+    width: 40%;
+    min-width: 300px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+}
+
+.login,
+.signup,
+.forgot{
+    width: 100%;
+    background-color: var(--login-background-color);
+    border-radius: 6px;
+}
+
+.login .title,
+.signup .title, 
+.forgot .title{
+    height:5rem;
+    background-color: var(--login-title);
+    border-radius: 6px 6px 0 0;
+    color: var(--tiltle-color);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .form-login, 
+.signup .form-signup, 
+.forgot .form-forgot{
+   padding-top: 2rem;
+   padding-left: 1.5rem;
+   padding-right: 1.3rem;
+   padding-bottom: 1.3rem;
+}
+
+.login .form-login .row, 
+.signup .form-signup .row,
+.forgot .form-forgot .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;    
+}
+
+.login .form-login .row input, 
+.signup .form-signup .row input,
+.forgot .form-forgot .row input{
+    height: 100%;
+    width: 100%;
+    background-color: var(--input-background-color);
+    outline: none;
+    padding-left: 60px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 6px;
+    font-size: 17px;
+    font-family: 300px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+.form-login .row input::placeholder, 
+.form-signup .row input::placeholder,
+.form-forgot .row input::placeholder{
+    color: var(--input-placeholder-color);
+    font-weight: 500;
+}
+
+.login .form-login .row i, 
+.signup .form-signup .row i,
+.forgot .form-forgot .row i{
+    position: absolute;
+    height: 100%;
+    width: 47px;
+    color: var(--i-color);
+    background-color: var(--i-background-color);
+    border: 1px solid var(--i-background-color);
+    border-radius: 6px 0 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .form-login .button input, 
+.signup .form-signup .button input,
+.forgot .form-forgot .button input{
+    color: var(--tiltle-color);
+    background-color: var(--button-background-color);
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 0;
+    border: 1px solid var(--button-background-color);
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.form-login .button input:hover, 
+.form-signup .button input:hover,
+.form-forgot .button input:hover{
+    background-color: var(--button-background-placeholder-color);
+}
+
+.login .form-login .link, 
+.signup .form-signup .link,
+.forgot .form-forgot .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.login .form-login .link a, 
+.signup .form-signup .link a,
+.forgot .form-forgot .link a{
+    text-decoration: none;
+    color: var(--link-color);
+    margin-top: 20px;
+    font-weight: 600;
+    
+}
+
+.form-login .link a:hover, 
+.form-signup .link a:hover,
+.form-forgot .link a:hover{
+    color: var(--link-hover-color);
+    font-weight: 600;
+}
+
+.login .form-login .link small, 
+.signup .form-signup .link small,
+.forgot .form-forgot .link small{
+    color: var(--link-color);
+    margin-left: 5px;
+    margin-right: 5px;    
+    margin-top: 20px;
+}
